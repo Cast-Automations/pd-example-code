@@ -10,10 +10,11 @@
     <p>This is a basic HTML page with a standard chat agent embedded dynamically using JavaScript.</p>
 
 <script type="module">
-  import Agent from 'https://cdn.jsdelivr.net/npm/@agent-embed/js/dist/web.js'
+  import Agent from 'https://cdn.jsdelivr.net/npm/@agent-embed/js@latest/dist/web.js'
   Agent.initStandard({
-    agentName: "demo",
-    apiHost: "https://app.predictabledialogs.com/web/incoming"
+    agentName: "Assistant OpenAI-48522",
+    apiHost: "https://app.predictabledialogs.com/web/incoming",
+    initialPrompt: "Hi",
   });
 </script>
 <agent-standard style="width: 100%; height: 600px; "></agent-standard>
